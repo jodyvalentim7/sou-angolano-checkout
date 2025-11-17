@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="pt-PT"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vídeo + Site Integrado</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Inter, system-ui, Arial, sans-serif;
+      background: #f9fafc;
+      overflow-x: hidden;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    header {
+      width: 100%;
+      background: #ffffff;
+      /* borda verde removida para evitar destaque ao carregar */
+      border-bottom: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0.5rem 0;
+    }
+
+    main {
+      width: 95%;
+      max-width: 1200px;
+      margin: 0 auto;
+      /* remover borda verde para aparência limpa */
+      border: none;
+      border-radius: 0 0 12px 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      /* permitir que o conteúdo participe da rolagem da página */
+      overflow: visible;
+      background: #fff;
+    }
+
+    iframe {
+      width: 100%;
+      /* usar min-height para que o iframe participe da rolagem do corpo
+         (não usar vh fixo que cria rolagem interna separada) */
+      min-height: 900px;
+      height: auto;
+      border: none;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        width: 98%;
+      }
+      iframe {
+        height: 92vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Vídeo -->
+    <header>
+      <vturb-smartplayer id="vid-691b6b33d69caa6c13405030" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/0cdd470a-caaa-4a57-8f58-42085422c88a/players/691b6b33d69caa6c13405030/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
+    </header>
+
+    <!-- Site -->
+    <main>
+  <iframe src="https://www.kintu.org/product/50895af9-0f75-47a0-b6b3-fd532f4e9dc3" title="Site incorporado" allow="clipboard-read; clipboard-write; fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation" style="width:100%;min-height:900px;border:none;display:block;" scrolling="no">
+</iframe>
+
+    </main>
+
+  </div>
+
+
+
+</body></html>
